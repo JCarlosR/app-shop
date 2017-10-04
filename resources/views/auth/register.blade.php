@@ -21,14 +21,16 @@
                                 <span class="input-group-addon">
                                     <i class="material-icons">face</i>
                                 </span>
-                                <input type="text" class="form-control" placeholder="Nombre" name="name" value="{{ old('name') }}" required autofocus>
+                                <input type="text" class="form-control" placeholder="Nombre" name="name"
+                                       value="{{ old('name', $name) }}" required autofocus>
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">email</i>
                                 </span>
-                                <input id="email" type="email" placeholder="Correo electrónico" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="email" type="email" placeholder="Correo electrónico" class="form-control" name="email"
+                                       value="{{ old('email', $email) }}" required autofocus>
                             </div>
 
                             <div class="input-group">
