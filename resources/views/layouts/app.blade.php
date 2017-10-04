@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name') }}</a>
+                <a class="navbar-brand" href="{{ url('/') }}">Góndola Virtual</a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
@@ -48,7 +48,7 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href="{{ url('/home') }}">Dashboard</a>
+                                    <a href="{{ url('/home') }}">Carrito de compras</a>
                                 </li>
                                 @if (auth()->user()->admin)
                                 <li>

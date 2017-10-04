@@ -64,10 +64,11 @@
 @endsection
 
 @section('content')
-<div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
+<div class="header header-filter" style="background-image: url('{{ asset('/img/city.jpg') }}');">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
+                <img src="{{ asset('/img/logo.png') }}" alt="Distribuidora Necochea Día" width="300">
                 <h1 class="title">Bienvenido a {{ config('app.name') }}.</h1>
                 <h4>Realiza pedidos en línea y te contactaremos para coordinar la entrega.</h4>
                 {{--<br />--}}
