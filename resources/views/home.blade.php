@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'App Shop | Dashboard')
-
 @section('body-class', 'product-page')
 
 @section('content')

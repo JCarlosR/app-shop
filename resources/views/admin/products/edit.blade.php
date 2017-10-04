@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Bienvenido a App Shop')
-
 @section('body-class', 'product-page')
 
 @section('content')
