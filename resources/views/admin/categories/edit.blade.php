@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Bienvenido a App Shop')
-
 @section('body-class', 'product-page')
 
 @section('content')
@@ -24,7 +22,7 @@
                 </div>
             @endif
 
-            <form method="post" action="{{ url('/admin/categories/'.$category->id.'/edit') }}">
+            <form method="post" action="{{ url('/admin/categories/'.$category->id.'/edit') }}" enctype="multipart/form-data">
                 {{ csrf_field() }}
 
                 <div class="row">
@@ -34,6 +32,16 @@
                             <input type="text" class="form-control" name="name" value="{{ old('name', $category->name) }}">
                         </div>
                     </div>
+                    <div class="col-sm-6">
+                        <label class="control-label">Imagen de la categoría</label>
+                        <input type="file" name="image">
+                        @if ($category->image)
+                        <p class="help-block">
+                            Subir sólo si desea reemplazar la 
+                            <a href="{{ asset('/images/categories/'.$category->image) }}" target="_blank">imagen actual</a>
+                        </p>
+                        @endif
+                    </div>                    
                 </div>
 
                 <textarea class="form-control" placeholder="Descripción de la categoría" rows="5" name="description">{{ old('description', $category->description) }}</textarea>

@@ -29,7 +29,7 @@ class Product extends Model
         }
 
         // default
-        return '/images/products/default.gif';
+        return '/images/default.gif';
     }
 
     public function getCategoryNameAttribute()
