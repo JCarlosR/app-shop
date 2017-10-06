@@ -12,8 +12,20 @@
 			{{ $user->name }}
 		</li>
 		<li>
+			<strong>Username:</strong>
+			{{ $user->username }}
+		</li>
+		<li>
 			<strong>E-mail:</strong>
 			{{ $user->email }}
+		</li>
+		<li>
+			<strong>Teléfono:</strong>
+			{{ $user->phone }}
+		</li>
+		<li>
+			<strong>Dirección:</strong>
+			{{ $user->address }}
 		</li>
 		<li>
 			<strong>Fecha del pedido:</strong>
