@@ -29,7 +29,7 @@ class AddFieldsToUsers extends Migration
     {
         Schema::table('users', function($table) {
             $table->dropColumn([
-                'phone', 'address'
+                'phone', 'address', 'username'
             ]);
         });
     }
