@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\CartDetail;
 use App\Http\Controllers\Controller;
 
+use App\ProductImage;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Category;
@@ -93,6 +94,7 @@ class ProductController extends Controller
     public function destroy($id)
     {
         CartDetail::where('product_id', $id)->delete();
+        ProductImage::where('product_id', $id)->delete();
 
         $product = Product::find($id);
         $product->delete(); // DELETE
