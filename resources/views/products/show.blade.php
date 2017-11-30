@@ -28,6 +28,7 @@
                 </div>
             </div>
             <div class="description text-center">
+                <p>$ {{ $product->price }}</p>
                 <p>{{ $product->long_description }}</p>
             </div>
 
@@ -53,12 +54,12 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             @foreach ($imagesLeft as $image)
-                                            <img src="{{ $image->url }}" class="img-rounded" />
+                                                <img src="{{ $image->url }}" class="img-rounded" />
                                             @endforeach
                                         </div>
                                         <div class="col-md-6">
                                             @foreach ($imagesRight as $image)
-                                            <img src="{{ $image->url }}" class="img-rounded" />
+                                                <img src="{{ $image->url }}" class="img-rounded" />
                                             @endforeach
                                         </div>
                                     </div>

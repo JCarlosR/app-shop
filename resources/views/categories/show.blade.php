@@ -21,6 +21,12 @@
           display: flex;
           flex-direction: column;
         }
+        .no-margin {
+            margin: 0;
+        }
+        .team .team-player .title {
+            margin-bottom: 0.5em;
+        }
     </style>
 @endsection
 
@@ -61,6 +67,7 @@
                             <h4 class="title">
                                 <a href="{{ url('/products/'.$product->id) }}">{{ $product->name }}</a>
                             </h4>
+                            <p class="no-margin">$ {{ $product->price }}</p>
                             <p class="description">{{ $product->description }}</p>
                         </div>
                     </div>
